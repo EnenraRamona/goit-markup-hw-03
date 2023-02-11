@@ -12,6 +12,8 @@
   --footer-text-color: #E7E9FC;
   --ourteam-background-color: #F4F4FD;
   --hero-title-color: #ffffff;
+  --teamrolecard-background-color: #ffffff;
+  --border-color: #E7E9FC;
 
 
 
@@ -35,12 +37,14 @@ p{
   margin-right: auto;
   outline: 2px solid tomato;
   max-width: 1158px;
+  width: 100% ;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .section{
-  padding: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 
 }
 
@@ -59,6 +63,10 @@ p{
 
 .logo{
   text-transform: uppercase;
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 76px;
 }
 
 
@@ -79,12 +87,7 @@ p{
   color: var(--description-text-color);
 }
 
-.header-logo{
-  display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-right: 76px;
-}
+
 
 .site-navigation .nav-item{
   margin-right: 40px;
@@ -166,6 +169,8 @@ p{
 .hero-section {
   background-color: #2e2f42;
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 292px;
 }
 .hero-title {
   font-family: 'Roboto' , sans-serif;
@@ -173,9 +178,9 @@ p{
   line-height: 1.0em;
   color: var(--hero-title-color);
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 180px;
+  margin-bottom: 0; 
   text-align: center;
+  white-space: pre-line;
 }
 
 .hero-btn {
@@ -192,7 +197,7 @@ p{
   width: 169px;
   height: 56px;
   margin-top: 48px;
-  margin-bottom: 188px;
+  border: none;
 }
 
 
@@ -208,7 +213,6 @@ p{
 
 .portfolio-list{
   display: flex;
-  padding-top: 96px;
   justify-content: center;
   gap: 24px;
 }
@@ -220,6 +224,16 @@ p{
   margin-top:  72px;
   gap: 24px;
 
+}
+
+.example-list-item{
+  display: block;
+}
+
+.example-card{
+  padding-left: 16px;
+  padding-bottom: 32px;
+  border: 1px solid var(--border-color);
 }
 
 .portfolio-btn  {
@@ -248,13 +262,14 @@ p{
 
 .feature-list{
   display: flex;
-   gap: 24px;
+  gap: 24px;
 
 }
 
 .feature-item{
-  max-width: 264px;
-  
+width: 264px;
+height: 104px; 
+
 }
 
 .feature-list .title {
@@ -270,12 +285,14 @@ line-height: 1.2em;
   font-size: 16px;
   line-height: 1.5em;
   letter-spacing: 0.02em;
-  padding-top: 8px;
+  margin-top: 8px;
   
 }
 /* Examples */
 
-
+.image-ex{
+  display: block;
+}
 
 .examples-list{
   display: flex;
@@ -291,6 +308,15 @@ line-height: 1.2em;
 
 /* Our Team */
 
+
+
+.team-section{
+  background-color: var(--ourteam-background-color);
+}
+
+.image-team{
+display: block;
+}
 .team-list{
   display: flex;
   justify-content: space-evenly;
@@ -299,20 +325,24 @@ line-height: 1.2em;
   text-align: center;
 }
 
-.section-team{
-  background-color: var(--ourteam-background-color);
+.team-role-card{
+  background-color: var(--teamrolecard-background-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
 
 .team-title {
   color: var(--primary-text-color);
   font-size: 20px;
   line-height: 1.2em;
-  padding-top: 32px;
+  padding-left: 49px;
+  padding-right: 49px;
 
 }
 .team-role {
   color: var(--description-text-color);
-  padding-top: 8px;
+  margin-top: 8px;
 }
 
 
@@ -336,8 +366,8 @@ line-height: 1.2em;
   font-size: 16px;
   line-height: 1.5em;
   color: var(--footer-text-color);
-  padding-top: 16px;
-  max-width: 264px;
+ margin-top: 16px;
+  width: 264px;
 }
 
 
@@ -350,7 +380,7 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2em;
 color: var(--primary-text-color);
-padding-top: 32px;
+
 }
 
 .example-type {
@@ -358,7 +388,7 @@ font-family: 'Roboto', sans-serif;
 font-size: 16px;
 line-height: 1.5em;
 color: var(--description-text-color);
-padding-top: 8px;
+margin-top: 8px;
 }
 
 .visually-hidden {
@@ -379,4 +409,11 @@ padding-top: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2em;
+}
+
+
+/* Portfolio*/
+.portfolio-section{
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
