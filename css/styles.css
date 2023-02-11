@@ -69,6 +69,11 @@ p{
   margin-right: 76px;
 }
 
+.logo-footer{
+  text-transform: uppercase;
+    display: inline-block;
+}
+
 
 
 .accent {
@@ -107,6 +112,7 @@ p{
 
 .contact-navigation{
   display: flex;
+  
 }
 
 
@@ -117,7 +123,7 @@ p{
 .main-nav{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .site-navigation .link {
@@ -170,7 +176,7 @@ p{
   background-color: #2e2f42;
   text-align: center;
   padding-top: 188px;
-  padding-bottom: 292px;
+  padding-bottom: 188px;
 }
 .hero-title {
   font-family: 'Roboto' , sans-serif;
@@ -232,8 +238,14 @@ p{
 
 .example-card{
   padding-left: 16px;
+  padding-top: 32px;
   padding-bottom: 32px;
   border: 1px solid var(--border-color);
+  border-top-style: none;
+}
+
+.image-exportf{
+  display: block;
 }
 
 .portfolio-btn  {
@@ -327,6 +339,7 @@ display: block;
 
 .team-role-card{
   background-color: var(--teamrolecard-background-color);
+  text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
