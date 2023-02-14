@@ -43,7 +43,6 @@ p{
 }
 
 .section{
-  padding-top: 120px;
   padding-bottom: 120px;
 
 }
@@ -349,8 +348,7 @@ display: block;
   color: var(--primary-text-color);
   font-size: 20px;
   line-height: 1.2em;
-  padding-left: 49px;
-  padding-right: 49px;
+ 
 
 }
 .team-role {
